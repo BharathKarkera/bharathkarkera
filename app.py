@@ -20,4 +20,6 @@ def page(page_name='/'):
 def about_method():
 	return flask.render_template('about.html')
 
-app.run()    
+
+if __name__ == '__main__':
+    app.run(debug=True)
